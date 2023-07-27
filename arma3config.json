@@ -285,7 +285,7 @@
         "EnumValues":{}
     },
     {
-        "DisplayName":"Send headless to this IP",
+        "DisplayName":"Headless Client connect to this IP",
         "Category":"Arma Server Settings",
         "Description":"Tells the headless client where to connect, i.e. if you would like to send them elsewhere. This is primarily added for testing purposes, it will not shut off the local server when you do this to an external server.",
         "Keywords":"headless,client,custom,server,arguments,parameters,file,parfile",
