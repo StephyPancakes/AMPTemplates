@@ -288,14 +288,14 @@
         "DisplayName":"Headless Client connect to this IP",
         "Category":"Arma Server Settings",
         "Description":"Tells the headless client where to connect, i.e. if you would like to send them elsewhere. This is primarily added for testing purposes, it will not shut off the local server when you do this to an external server.",
-        "Keywords":"headless,client,custom,server,arguments,parameters,file,parfile",
+        "Keywords":"headless,client,ip,headlessclients",
         "FieldName":"hc_connect_to",
         "InputType":"text",
         "IsFlagArgument":false,
         "ParamFieldName":"hc_connect_to",
         "IncludeInCommandLine":false,
-        "DefaultValue":"\"127.0.0.1\"",
-        "Placeholder":"\"127.0.0.1\"",
+        "DefaultValue":"\"0.0.0.0\"",
+        "Placeholder":"\"0.0.0.0\"",
         "EnumValues":{}
     },
     {
