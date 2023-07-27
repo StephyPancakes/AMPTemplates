@@ -1,4 +1,4 @@
-Meta.DisplayName=Arma 3 (Updated)
+Meta.DisplayName=Arma 3 (No BattlEye) (Updated)
 Meta.Description=Arma 3 Dedicated Server
 Meta.OS=Windows, Linux
 Meta.Arch=x86_64
@@ -19,7 +19,7 @@ Meta.Prerequsites=[]
 Meta.ExtraContainerPackages=[]
 Meta.ConfigReleaseState=NotSpecified
 Meta.NoCommercialUsage=False
-App.DisplayName=Rat / Arma 3 (No BattlEye)
+App.DisplayName=ArmA 3
 App.RootDir=./arma3/
 App.BaseDirectory=./arma3/233780/
 App.SteamWorkshopDownloadLocation={{$FullBaseDir}}
