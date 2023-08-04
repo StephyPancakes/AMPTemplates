@@ -285,20 +285,6 @@
         "EnumValues":{}
     },
     {
-        "DisplayName":"Send headless to this IP",
-        "Category":"Arma Server Settings",
-        "Description":"Tells the headless client where to connect, i.e. if you would like to send them elsewhere. This is primarily added for testing purposes, it will not shut off the local server when you do this to an external server.",
-        "Keywords":"headless,client,ip,headlessclients",
-        "FieldName":"hc_connect_to",
-        "InputType":"text",
-        "IsFlagArgument":false,
-        "ParamFieldName":"hc_connect_to",
-        "IncludeInCommandLine":false,
-        "DefaultValue":"\"0.0.0.0\"",
-        "Placeholder":"\"0.0.0.0\"",
-        "EnumValues":{}
-    },
-    {
         "DisplayName":"Use Headless Client Startup Parameters File",
         "Category":"Arma Server Settings",
         "Description":"If enabled, allows the use of a [parameters file](https://community.bistudio.com/wiki/Startup_Parameters_Config_File) for additional startup parameters for headless clients. File is \"hc_parameters.txt\" in the server base directory. Useful if the server also uses its own Startup Parameters File for mods. Use with care",
