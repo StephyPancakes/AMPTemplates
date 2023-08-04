@@ -62,9 +62,9 @@
     },
     {
         "UpdateStageName":"Performance Profiling Binary Copy",
-        "UpdateSourcePlatform":"All",
+        "UpdateSourcePlatform":"Linux",
         "UpdateSource":"CopyFilePath",
-        "UpdateSourceData":"{{$FullBaseDir}}arma3server_x64.exe",
+        "UpdateSourceData":"{{$FullBaseDir}}arma3server_x64",
         "UpdateSourceArgs":"{{$FullRootDir}}.profiling/arma3server_x64",
         "OverwriteExistingFiles":true,
         "UpdateSourceConditionSetting":"ServerBranch",
@@ -72,7 +72,7 @@
     },
     {
         "UpdateStageName":"Performance Profiling Binary Copy",
-        "UpdateSourcePlatform":"All",
+        "UpdateSourcePlatform":"Windows",
         "UpdateSource":"CopyFilePath",
         "UpdateSourceData":"{{$FullBaseDir}}ArmA3Server_x64.exe",
         "UpdateSourceArgs":"{{$FullRootDir}}.profiling/ArmA3Server_x64.exe",
@@ -84,7 +84,7 @@
         "UpdateStageName":"Server Config Template Download",
         "UpdateSourcePlatform":"All",
         "UpdateSource":"FetchURL",
-        "UpdateSourceData":"https://github.com/StephyPancakes/AMPTemplates/raw/main/arma3server.cfg",
+        "UpdateSourceData":"https://github.com/CubeCoders/AMPTemplates/raw/main/arma3server.cfg",
         "UpdateSourceArgs":"AMP_server.cfg",
         "UpdateSourceTarget":"{{$FullBaseDir}}",
         "OverwriteExistingFiles":false
@@ -93,7 +93,7 @@
         "UpdateStageName":"Basic Config File Download",
         "UpdateSourcePlatform":"All",
         "UpdateSource":"FetchURL",
-        "UpdateSourceData":"https://github.com/StephyPancakes/AMPTemplates/raw/main/arma3basic.cfg",
+        "UpdateSourceData":"https://github.com/CubeCoders/AMPTemplates/raw/main/arma3basic.cfg",
         "UpdateSourceArgs":"basic.cfg",
         "UpdateSourceTarget":"{{$FullBaseDir}}",
         "OverwriteExistingFiles":false
@@ -113,26 +113,19 @@
         "OverwriteExistingFiles":false
     },
     {
-        "UpdateStageName":"Initialise Wine",
-        "UpdateSourcePlatform":"Linux",
-        "UpdateSource":"Executable",
-        "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"-c 'WINEPREFIX=\"{{$FullRootDir}}.wine\" WINEARCH=win64 WINEDEBUG=-all WINEDLLOVERRIDES=\"mscoree,mshtml=\" /usr/bin/wineboot --init --update'"
-    },
-    {
-        "UpdateStageName":"Winescript Download",
+        "UpdateStageName":"Modscript Download",
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"FetchURL",
-        "UpdateSourceData":"https://raw.githubusercontent.com/StephyPancakes/AMPTemplates/main/arma3genericwinescript.sh",
-        "UpdateSourceArgs":"winescript.sh",
+        "UpdateSourceData":"https://github.com/CubeCoders/AMPTemplates/raw/main/arma3convertmods.sh",
+        "UpdateSourceArgs":"convertmods.sh",
         "UpdateSourceTarget":"{{$FullInstanceDir}}",
         "OverwriteExistingFiles":true
     },
     {
-        "UpdateStageName":"Install Windows Components",
+        "UpdateStageName":"Convert Mods",
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"Executable",
         "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"./winescript.sh"
-	}
+        "UpdateSourceArgs":"./convertmods.sh"
+    }
 ]
