@@ -84,7 +84,7 @@
         "UpdateStageName":"Server Config Template Download",
         "UpdateSourcePlatform":"All",
         "UpdateSource":"FetchURL",
-        "UpdateSourceData":"https://github.com/CubeCoders/AMPTemplates/raw/main/arma3server.cfg",
+        "UpdateSourceData":"https://github.com/StephyPancakes/AMPTemplates/raw/main/arma3server.cfg",
         "UpdateSourceArgs":"AMP_server.cfg",
         "UpdateSourceTarget":"{{$FullBaseDir}}",
         "OverwriteExistingFiles":false
@@ -93,7 +93,7 @@
         "UpdateStageName":"Basic Config File Download",
         "UpdateSourcePlatform":"All",
         "UpdateSource":"FetchURL",
-        "UpdateSourceData":"https://github.com/CubeCoders/AMPTemplates/raw/main/arma3basic.cfg",
+        "UpdateSourceData":"https://github.com/StephyPancakes/AMPTemplates/raw/main/arma3basic.cfg",
         "UpdateSourceArgs":"basic.cfg",
         "UpdateSourceTarget":"{{$FullBaseDir}}",
         "OverwriteExistingFiles":false
@@ -116,7 +116,7 @@
         "UpdateStageName":"Modscript Download",
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"FetchURL",
-        "UpdateSourceData":"https://github.com/CubeCoders/AMPTemplates/raw/main/arma3convertmods.sh",
+        "UpdateSourceData":"https://github.com/StephyPancakes/AMPTemplates/raw/main/arma3convertmods.sh",
         "UpdateSourceArgs":"convertmods.sh",
         "UpdateSourceTarget":"{{$FullInstanceDir}}",
         "OverwriteExistingFiles":true
