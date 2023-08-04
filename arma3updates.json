@@ -7,8 +7,7 @@
         "UpdateSourceArgs":"107410",
         "UpdateSourceVersion":"public",
         "UpdateSourceConditionSetting":"ServerBranch",
-        "UpdateSourceConditionValue":"public",
-        "ForceDownloadPlatform":"Windows"
+        "UpdateSourceConditionValue":"public"
     },
     {
         "UpdateStageName":"SteamCMD Download",
@@ -18,8 +17,7 @@
         "UpdateSourceArgs":"107410",
         "UpdateSourceVersion":"profiling",
         "UpdateSourceConditionSetting":"ServerBranch",
-        "UpdateSourceConditionValue":"profiling",
-        "ForceDownloadPlatform":"Windows"
+        "UpdateSourceConditionValue":"profiling"
     },
     {
         "UpdateStageName":"SteamCMD Download",
@@ -29,8 +27,7 @@
         "UpdateSourceArgs":"107410",
         "UpdateSourceVersion":"creatordlc",
         "UpdateSourceConditionSetting":"ServerBranch",
-        "UpdateSourceConditionValue":"creatordlc",
-        "ForceDownloadPlatform":"Windows"
+        "UpdateSourceConditionValue":"creatordlc"
     },
     {
         "UpdateStageName":"SteamCMD Download",
@@ -40,8 +37,7 @@
         "UpdateSourceArgs":"107410",
         "UpdateSourceVersion":"contact",
         "UpdateSourceConditionSetting":"ServerBranch",
-        "UpdateSourceConditionValue":"contact",
-        "ForceDownloadPlatform":"Windows"
+        "UpdateSourceConditionValue":"contact"
     },
     {
         "UpdateStageName":"SteamCMD Creator DLC Download",
@@ -51,8 +47,7 @@
         "UpdateSourceArgs":"107410",
         "UpdateSourceVersion":"creatordlc",
         "UpdateSourceConditionSetting":"ServerBranch",
-        "UpdateSourceConditionValue":"creatordlc-profiling",
-        "ForceDownloadPlatform":"Windows"
+        "UpdateSourceConditionValue":"creatordlc-profiling"
     },
     {
         "UpdateStageName":"SteamCMD Performance Profiling Download",
@@ -63,8 +58,7 @@
         "UpdateSourceTarget":".profiling",
         "UpdateSourceVersion":"profiling",
         "UpdateSourceConditionSetting":"ServerBranch",
-        "UpdateSourceConditionValue":"creatordlc-profiling",
-        "ForceDownloadPlatform":"Windows"
+        "UpdateSourceConditionValue":"creatordlc-profiling"
     },
     {
         "UpdateStageName":"Performance Profiling Binary Copy",
