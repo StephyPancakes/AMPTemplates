@@ -28,7 +28,7 @@ App.ExecutableLinux=/usr/bin/wine
 App.WorkingDir=233780
 App.LinuxCommandLineArgs="./arma3server_x64.exe"
 App.WindowsCommandLineArgs=
-App.CommandLineArgs={{$PlatformArgs}} -name=AMPServer "-profiles={{$FullBaseDir}}A3Master" "-bepath={{$FullBaseDir}}battleye" -port={{$GamePort}} -config=server.cfg -cfg=basic.cfg -world=empty -ip={{$ApplicationIPBinding}} {{autoInit}} {{$FormattedArgs}} {{parfile}} {{CustomServerArgs}}
+App.CommandLineArgs={{$PlatformArgs}} -name=AMPServer "-profiles={{$FullBaseDir}}A3Master" -port={{$GamePort}} -config=server.cfg -cfg=basic.cfg -world=empty -ip={{$ApplicationIPBinding}} {{autoInit}} {{$FormattedArgs}} {{parfile}} {{CustomServerArgs}}
 App.UseLinuxIOREDIR=False
 App.AppSettings={}
 App.EnvironmentVariables={"LD_LIBRARY_PATH":"./linux64:%LD_LIBRARY_PATH%","SteamAppId":"107410","WINEPREFIX":"{{$FullRootDir}}.wine","WINEARCH":"win64","WINEDEBUG":"-all"}
@@ -68,7 +68,7 @@ App.RapidStartup=False
 App.MonitorChildProcess=True
 App.DumpFullChildProcessTree=False
 App.MonitorChildProcessWaitMs=1000
-App.MonitorChildProcessName=arma3sever_x64.exe
+App.MonitorChildProcessName=arma3server_x64.exe
 App.SupportsUniversalSleep=False
 App.WakeupMode=Any
 App.ApplicationReadyMode=RegexMatch
