@@ -34,8 +34,9 @@ App.AppSettings={}
 App.EnvironmentVariables={"LD_LIBRARY_PATH":"{{$FullBaseDir}}linux64:%LD_LIBRARY_PATH%","SteamAppId":"107410","WINEPREFIX":"{{$FullRootDir}}.wine","WINEARCH":"win64","WINEDEBUG":"-all"}
 App.CommandLineParameterFormat="-{0}={1}"
 App.CommandLineParameterDelimiter= 
-App.ExitMethod=Kill
+App.ExitMethod=OS_CLOSE
 App.ExitTimeout=5
+App.ExitString=taskkill /IM   
 App.ExitFile=app_exit.lck
 App.HasWriteableConsole=True
 App.HasReadableConsole=True
