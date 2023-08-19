@@ -7,7 +7,8 @@
         "UpdateSourceArgs":"107410",
         "UpdateSourceVersion":"public",
         "UpdateSourceConditionSetting":"ServerBranch",
-        "UpdateSourceConditionValue":"public"
+        "UpdateSourceConditionValue":"public",
+        "ForceDownloadPlatform":"Windows"
     },
     {
         "UpdateStageName":"SteamCMD Download",
@@ -17,7 +18,8 @@
         "UpdateSourceArgs":"107410",
         "UpdateSourceVersion":"profiling",
         "UpdateSourceConditionSetting":"ServerBranch",
-        "UpdateSourceConditionValue":"profiling"
+        "UpdateSourceConditionValue":"profiling",
+        "ForceDownloadPlatform":"Windows"
     },
     {
         "UpdateStageName":"SteamCMD Download",
@@ -27,7 +29,8 @@
         "UpdateSourceArgs":"107410",
         "UpdateSourceVersion":"creatordlc",
         "UpdateSourceConditionSetting":"ServerBranch",
-        "UpdateSourceConditionValue":"creatordlc"
+        "UpdateSourceConditionValue":"creatordlc",
+        "ForceDownloadPlatform":"Windows"
     },
     {
         "UpdateStageName":"SteamCMD Download",
@@ -37,7 +40,8 @@
         "UpdateSourceArgs":"107410",
         "UpdateSourceVersion":"contact",
         "UpdateSourceConditionSetting":"ServerBranch",
-        "UpdateSourceConditionValue":"contact"
+        "UpdateSourceConditionValue":"contact",
+        "ForceDownloadPlatform":"Windows"
     },
     {
         "UpdateStageName":"SteamCMD Creator DLC Download",
@@ -47,7 +51,8 @@
         "UpdateSourceArgs":"107410",
         "UpdateSourceVersion":"creatordlc",
         "UpdateSourceConditionSetting":"ServerBranch",
-        "UpdateSourceConditionValue":"creatordlc-profiling"
+        "UpdateSourceConditionValue":"creatordlc-profiling",
+        "ForceDownloadPlatform":"Windows"
     },
     {
         "UpdateStageName":"SteamCMD Performance Profiling Download",
@@ -58,21 +63,12 @@
         "UpdateSourceTarget":".profiling",
         "UpdateSourceVersion":"profiling",
         "UpdateSourceConditionSetting":"ServerBranch",
-        "UpdateSourceConditionValue":"creatordlc-profiling"
+        "UpdateSourceConditionValue":"creatordlc-profiling",
+        "ForceDownloadPlatform":"Windows"
     },
     {
         "UpdateStageName":"Performance Profiling Binary Copy",
-        "UpdateSourcePlatform":"Linux",
-        "UpdateSource":"CopyFilePath",
-        "UpdateSourceData":"{{$FullBaseDir}}arma3server_x64",
-        "UpdateSourceArgs":"{{$FullRootDir}}.profiling/arma3server_x64",
-        "OverwriteExistingFiles":true,
-        "UpdateSourceConditionSetting":"ServerBranch",
-        "UpdateSourceConditionValue":"creatordlc-profiling"
-    },
-    {
-        "UpdateStageName":"Performance Profiling Binary Copy",
-        "UpdateSourcePlatform":"Windows",
+        "UpdateSourcePlatform":"All",
         "UpdateSource":"CopyFilePath",
         "UpdateSourceData":"{{$FullBaseDir}}ArmA3Server_x64.exe",
         "UpdateSourceArgs":"{{$FullRootDir}}.profiling/ArmA3Server_x64.exe",
@@ -113,19 +109,26 @@
         "OverwriteExistingFiles":false
     },
     {
-        "UpdateStageName":"Modscript Download",
+        "UpdateStageName":"Initialise Wine",
+        "UpdateSourcePlatform":"Linux",
+        "UpdateSource":"Executable",
+        "UpdateSourceData":"/bin/bash",
+        "UpdateSourceArgs":"-c 'WINEPREFIX=\"{{$FullRootDir}}.wine\" WINEARCH=win64 WINEDEBUG=-all WINEDLLOVERRIDES=\"mscoree,mshtml=\" /usr/bin/wineboot --init --update'"
+    },
+    {
+        "UpdateStageName":"Winescript Download",
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"FetchURL",
-        "UpdateSourceData":"https://github.com/StephyPancakes/AMPTemplates/raw/main/arma3convertmods.sh",
-        "UpdateSourceArgs":"convertmods.sh",
+        "UpdateSourceData":"https://raw.githubusercontent.com/StephyPancakes/AMPTemplates/main/arma3genericwinescript.sh",
+        "UpdateSourceArgs":"winescript.sh",
         "UpdateSourceTarget":"{{$FullInstanceDir}}",
         "OverwriteExistingFiles":true
     },
     {
-        "UpdateStageName":"Convert Mods",
+        "UpdateStageName":"Install Windows Components",
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"Executable",
         "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"./convertmods.sh"
-    }
+        "UpdateSourceArgs":"./winescript.sh"
+	}
 ]
