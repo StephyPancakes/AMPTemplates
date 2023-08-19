@@ -26,7 +26,7 @@ App.SteamWorkshopDownloadLocation={{$FullBaseDir}}
 App.ExecutableWin=233780\ArmA3Server_x64.exe
 App.ExecutableLinux=/usr/bin/wine
 App.WorkingDir=233780
-App.LinuxCommandLineArgs="./233780/arma3server_x64.exe"
+App.LinuxCommandLineArgs="./arma3server_x64.exe"
 App.WindowsCommandLineArgs=
 App.CommandLineArgs={{$PlatformArgs}} -name=AMPServer "-profiles={{$FullBaseDir}}A3Master" "-bepath={{$FullBaseDir}}battleye" -port={{$GamePort}} -config=server.cfg -cfg=basic.cfg -world=empty -ip={{$ApplicationIPBinding}} {{autoInit}} {{$FormattedArgs}} {{parfile}} {{CustomServerArgs}}
 App.UseLinuxIOREDIR=False
